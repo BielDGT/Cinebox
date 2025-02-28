@@ -16,9 +16,6 @@ $resultado = $banco->query($select)->fetchAll();
     <?php foreach($resultado as $linha) {?>
 
     <div class="row desc-filme">
-
-    
-
         <div class="col-12 col-lg-2 col-sm-12 col-md-12 text-center">
             <img src="./assets/img/poster/<?php echo $linha['poster'] ?>" alt="" class="desc-foto">
         </div>

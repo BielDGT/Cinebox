@@ -3,7 +3,7 @@
         <main class="container">
             <div class="row">
 
-            <?php for ($i=0; $i < 8 ; $i++) { include './includes/filme_cards.php'; }  ?>
+            <?php  include './includes/filme_cards.php';  ?>
 
                 
             </div>

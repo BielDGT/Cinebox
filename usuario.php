@@ -1,5 +1,19 @@
+
+
 <?php
 include './includes/header.php';
+
+if($_SERVER['REQUEST_METHOD'] == 'GET' && !empty($_GET) && $_GET['sair'] == 'true') {
+    session_destroy();
+    header('location:index.php');
+}
+
+
+if (empty($_SESSION) && !isset($_SESSION['id_pessoa'])){
+    header('location:usuario-login.php');
+
+}
+
 ?>
 
 <link rel="stylesheet" href="./Assets/CSS/usuario.css">

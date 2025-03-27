@@ -1,14 +1,17 @@
-<?php 
-$titulo = 'Cinebox - Filmes';
+<?php
+require './classes/Filmes.php';
+require './classes/Generos.php';
+
 
 $titulo = '';
-include './includes/header.php'; 
-
-require './classes/Filmes.php';
+include './includes/header.php';
 
 $filmes = new Filmes();
 $dadosFilmes = $filmes-> exibirListaFilmes();
 
-include './includes/filme_lista.php';
+$generos = new Generos();
+$dadosGeneros = $generos-> consultarListaGeneros();
+
+include './includes/filmes_filtro.php';
 include './includes/footer.php';
 ?>

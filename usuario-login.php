@@ -1,8 +1,6 @@
 <?php
 
-include './includes/header.php';
-
-// se o post existe e diferente de vazio    
+include './includes/header.php';  
 
 
 if($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)){
@@ -16,14 +14,9 @@ if($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)){
     
     $banco = new PDO($dsn, $user, $password);
 
-    // quando colocar a variavel em chaves, ele procura a variavel, como $usuarioFormulario a linha abaixo
-    // aspas simples so executa.
-    // aspas duplas vai interpretar o comando.
     $script = "SELECT * FROM tb_usuario WHERE usuario = '{$usuarioFormulario}' AND senha = '{$senhaFormulario}' ";
 
     $resultado = $banco->query($script)->fetch();
-
-    // se resultado de vazio e diferente de falso
 
     if(!empty($resultado) && $resultado != false){
 
@@ -36,10 +29,8 @@ if($_SERVER["REQUEST_METHOD"] == 'POST' && !empty($_POST)){
         $_SESSION['nome'] = $dadosUsuario['nome'];
         $_SESSION['ano_nascimento'] = $dadosUsuario['ano_nascimento'];
         $_SESSION['telefone_1'] = $dadosUsuario['telefone_1'];
-        // session guarda todas as informações do usuario
 
         header('location:usuario.php');
-        // redirecionamento
     }else{
         echo'
         <script>

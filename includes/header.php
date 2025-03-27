@@ -16,9 +16,7 @@
     }
     ?>
     </title>
-<!-- isset -> é existe
-''''    empty -> é vazio  
--->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -29,6 +27,8 @@
     <link rel="stylesheet" href="./assets/css/usuario.css">
     <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/Filtro.css">
+
 </head>
 
 <body>
@@ -49,7 +49,6 @@
                 <li><a href="#"><i class="bi bi-cart"></i></a></li>
                 <li><a href="./usuario.php"><i class="bi bi-person-circle"></i></a></li>
             </ul>
-            <!-- começando com o hamburguer -->
             <button class="menu-oculto" onclick="javascript:abrirNav()">
                 <i class="bi bi-list"></i>
             </button>

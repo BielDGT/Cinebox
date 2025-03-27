@@ -1,4 +1,13 @@
+<style>
+    .link_produto{
+    color: black;
+    text-decoration: none;
+
+}
+</style>
+
 <div class="col-lg-<?= isset($qntd) ? $qntd : 3 ?> col-md-6 col-sm-12">
+<a href="./filmes-consultar.php?id=<?=$value['id']  ?>" class="link_produto">
     <figure>
         <img src="./assets/img/poster/<?= $value['poster'] ?>"
             alt="poster de <?= $value['nome'] ?> " class="foto-produto">
@@ -18,4 +27,5 @@
         </span>
 
     </figure>
+    </a>
 </div>

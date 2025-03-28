@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="./assets/css/sobre.css">
     <link rel="stylesheet" href="./assets/css/login.css">
     <link rel="stylesheet" href="./assets/css/Filtro.css">
+    <link rel="stylesheet" href="./assets/css/detalhes.css">
+
 
 </head>
 
@@ -35,7 +37,7 @@
     <header>
         <nav class="menu-perfil">
             <a href="./index.php" class="logo">
-                <h1>Cine box</h1>
+                <h1>Cinebox</h1>
             </a>
             <ul class="menu">
                 <li><a href="./index.php">Inicio</a></li>
